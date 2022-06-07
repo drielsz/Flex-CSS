@@ -44,6 +44,16 @@ body {
   color: white;
 }
 
+.text-avaliacao {  
+    font-size: clamp(16px, 0.1rem, 8px);
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.text-appear{
+    display: none;
+}
+
 .star-client {
   display: flex;
   background-color: transparent;
@@ -174,6 +184,18 @@ input:focus{
 
     .div-input{
         width: 100%;
+    }
+}
+
+@media (max-width: 610px) {
+    .text-desappear{
+        display: none;
+    }
+    .text-appear{
+        display: block;
+    }
+    .box-2{
+        margin-top: 100px
     }
 }
 
