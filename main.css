@@ -212,3 +212,7 @@ input:focus{
         margin-right:40%;
     }
 }
+
+@media (max-width: 200px) {
+    
+}
