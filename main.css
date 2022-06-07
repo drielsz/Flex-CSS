@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 1rem;
+  background-color: #101010;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  grid-row-gap: 20px;
+}
+
+.box-1 {
+  flex: 1;
+  min-width: 570px;
+  height: 400px;
+  align-self: center;
+  box-sizing: border-box;
+}
+
+.div-quote {
+  width: 139px;
+  height: 100px;
+  background-color: #f1b231;
+  /* topo | direita | inferior | esquerda */
+  margin: 40px 0px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-client {
+  margin: 40px 0px 0px 40px;
+  color: white;
+}
+
+.star-client {
+  display: flex;
+  background-color: transparent;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.star-client span::before {
+  content: "\2605";
+  color: #efce4a;
+  font-size: 30px;
+}
+
+.div-back-next {
+  margin: 40px 0px 0px 40px;
+  display: flex;
+  width: 18%;
+  justify-content: space-between;
+}
+
+.back {
+  width: 60px;
+  height: 41px;
+  background-color: #f1b231;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.back span::before {
+  content: "\2190";
+  font-size: 50px;
+  color: white;
+}
+
+.next {
+  width: 60px;
+  height: 41px;
+  background-color: #f1b231;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.next span::before {
+  content: "\2192";
+  font-size: 50px;
+  color: white;
+}
+
+.back:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.next:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+/*  */
+
+.box-2 {
+  flex: 1;
+  min-width: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  overflow-x: hidden;
+}
+
+.first-square {
+  width: 300px;
+  height: 300px;
+  background-color: #F1B231;
+  
+  margin: 40px 0px 0px 40px;
+
+  position: relative;
+}
+
+
+.user-image{
+    width: 100%;
+    position: absolute;
+    right: 60px;
+    top: 60px;
+}
+
+.search-produto{
+    margin-top: 100px;
+    width: 100%;
+    padding: 15px;
+    background-color: #FAFAFA;
+    border: 1px solid #FAFAFA;
+    border-radius: 3px;
+}
+
+input::placeholder {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+}
+
+input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 1px solid #F1B231;
+}
+
+
+.div-input {
+    width: 360px
+}
+
+@media (max-width: 792px) {
+    .div-back-next{
+        width: 25%;
+    }
+}
+
+@media (max-width: 638px) {
+    .box-2{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-input{
+        width: 100%;
+    }
+}
+
+@media (max-width: 532px) {
+    .first-square{
+        margin-right: 20%;
+    }
+}
+
+@media (max-width: 460px) {
+    .first-square{
+        width: 200px;
+        height: 200px;
+        margin-right:40%;
+    }
+}
